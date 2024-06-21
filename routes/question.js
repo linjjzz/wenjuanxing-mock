@@ -1,5 +1,5 @@
-const Mock = require('mockjs')
 const router = require('koa-router')()
+const Mock = require('mockjs')
 
 router.prefix('/api/question')
 

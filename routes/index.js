@@ -1,8 +1,8 @@
-const text = require('./text')
 const question = require('./question')
+const user = require('./user')
 
 const routeList = [
-  text, question
+  question, user
 ]
 
 module.exports = routeList
