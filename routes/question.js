@@ -12,7 +12,43 @@ router.get('/:id', function (ctx, next) {
     code: 0,
     data: {
       id,
-      title: Random.ctitle()
+      title: Random.ctitle(),
+      componentList: [
+        {
+          fe_id: Random.id(),
+          type: 'questionTitle',
+          tltle: '标题',
+          isHidden: false,
+          isLocked: false,
+          props: {
+            text: '个人信息调研',
+            level: 1,
+            isCenter: true
+          }
+        },
+        {
+          fe_id: Random.id(),
+          type: 'questionInput',
+          tltle: '输入框',
+          isHidden: false,
+          isLocked: false,
+          props: {
+            title: '你的姓名',
+            placeholder: '请输入姓名'
+          }
+        },
+        {
+          fe_id: Random.id(),
+          type: 'questionInput',
+          tltle: '电话',
+          isHidden: true,
+          isLocked: false,
+          props: {
+            title: '你的电话',
+            placeholder: '请输入电话'
+          }
+        }
+      ]
     }
   }
 })
