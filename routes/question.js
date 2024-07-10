@@ -13,6 +13,9 @@ router.get('/:id', function (ctx, next) {
     data: {
       id,
       title: Random.ctitle(),
+      desc: '问卷描述',
+      js: '',
+      css: '',
       componentList: [
         {
           fe_id: Random.id(),
