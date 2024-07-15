@@ -15,7 +15,6 @@ router.get('/info', (ctx, next) => {
   }
 })
 
-
 router.post('/login', (ctx, next) => {
   ctx.body = {
     code: 0,
